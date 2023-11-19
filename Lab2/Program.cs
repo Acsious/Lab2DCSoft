@@ -1,16 +1,12 @@
 ﻿using Lab2;
 
-// путешественник
-Driver driver = new();
-// машина
-Car auto = new();
-// отправляемся в путешествие
-driver.Travel(auto);
-// встретились пески, надо использовать верблюда
-Camel camel = new();
-// используем адаптер
-ITransport camelTransport = new CamelToTransportAdapter(camel);
-// продолжаем путь по пескам пустыни
-driver.Travel(camelTransport);
+Console.WriteLine("Программа оформления дтп с участием велосепидиста.\n");
 
-Console.Read();
+Inspector inspector = new();
+
+Car auto = new();
+inspector.Log(auto);
+
+Cyclist cyclist = new();
+ITransport cyclistTransport = new CyclistToTransportAdapter(cyclist);
+inspector.Log(cyclistTransport);

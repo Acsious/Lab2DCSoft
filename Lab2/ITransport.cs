@@ -2,5 +2,5 @@
 
 internal interface ITransport
 {
-    void Drive();
+    void Crushed();
 }

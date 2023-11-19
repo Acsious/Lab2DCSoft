@@ -2,5 +2,5 @@
 
 internal class Car : ITransport
 {
-    public void Drive() => Console.WriteLine("Автомобиль едет по дороге");
+    public void Crushed() => Console.WriteLine("Автомобиль получил повреждения");
 }
