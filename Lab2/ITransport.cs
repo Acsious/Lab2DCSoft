@@ -2,5 +2,5 @@
 
 internal interface ITransport
 {
-    void Crushed();
+    void CrushedAsync();
 }

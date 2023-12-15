@@ -1,7 +1,5 @@
-﻿namespace Lab2
+﻿namespace Lab2;
+internal interface IWalker
 {
-    internal interface IWalker
-    {
-        void Injured();
-    }
+    void InjuredAsync();
 }
